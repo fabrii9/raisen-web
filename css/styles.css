@@ -284,6 +284,18 @@ p { margin: 0 0 1em; }
 .about__stamp b { font-size: 2.4rem; line-height: 1; }
 .about__stamp span { font-size: .82rem; line-height: 1.25; }
 
+.partner {
+  display: inline-flex; align-items: center; gap: 22px; margin-top: .5rem;
+  padding: 16px 26px; border-radius: 16px; background: #fff; border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm); transition: transform .3s, box-shadow .3s;
+}
+.partner:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.partner__label {
+  font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+  padding-right: 22px; border-right: 1px solid var(--line); line-height: 1.4;
+}
+.partner img { height: 46px; width: auto; }
+
 /* Contacto */
 .contact__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
 .contact__wa {
